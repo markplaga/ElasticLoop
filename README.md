@@ -1,5 +1,9 @@
 # Elastic Loop
 
+A browser app that turns a portrait, image, video, animated word, or live camera feed into a single continuous line drawing. Two engines grow the line: Curves (a smooth differential-growth loop) and Squares (a grid-based path). The result exports as one closed SVG path, ready for a plotter or laser.
+
+## Running it
+
 Open `index.html` in a modern browser. It is the complete application: inline JavaScript, CSS, and an embedded grayscale portrait. No build, runtime dependencies, accounts, or server are needed. Google Fonts are optional; system fonts work offline.
 
 For camera access, serve over HTTPS or localhost. For local development:
