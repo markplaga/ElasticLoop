@@ -1,0 +1,16 @@
+{
+  "name": "Elastic Loop",
+  "short_name": "ElasticLoop",
+  "description": "Turn images and live camera feeds into a single closed, self-avoiding line. Export an SVG for your next making project.",
+  "id": "./",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#eeede7",
+  "theme_color": "#eeede7",
+  "categories": ["design", "productivity", "utilities"],
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
