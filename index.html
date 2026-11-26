@@ -13,10 +13,10 @@
 <style>
 :root{color-scheme:light dark;--bg:#eeede7;--panel:#e3e5dc;--ink:#272e24;--muted:#626b5c;--rule:#c7ccbf;--accent:#3d6034;--button:#f9faf4;--well:#f4f5ed}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px 'IBM Plex Sans',system-ui,sans-serif;padding:40px 4vw 30px}header,main,footer{max-width:1390px;margin:auto}header{display:flex;justify-content:space-between;align-items:end;gap:24px;border-bottom:1px solid var(--rule);padding-bottom:24px}.eyebrow{font:10px 'IBM Plex Mono',monospace;letter-spacing:.15em;color:var(--accent)}h1{font:clamp(58px,7vw,88px)/1 'Instrument Serif',Georgia,serif;letter-spacing:-.035em;margin:14px 0 12px}header p{color:var(--muted);margin:0;max-width:490px;line-height:1.6}.edition{font:11px 'IBM Plex Mono',monospace;white-space:nowrap}main{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:28px;align-items:start;margin-top:28px}.stage{position:sticky;top:20px;min-width:0}.sheet{background:#fff;padding:12px;box-shadow:0 5px 28px #15220e0c;display:flex;justify-content:center}#view{background:white;display:block;width:100%;height:auto;max-height:78vh;object-fit:contain;touch-action:pan-y}#stats{display:flex;flex-wrap:wrap;gap:12px 22px;border-bottom:1px solid var(--rule);padding:17px 0;font:11px 'IBM Plex Mono',monospace;color:var(--muted)}#stats b{display:block;color:var(--ink);font-weight:500;margin-top:5px}.good{color:var(--accent)!important}.caption{font:11px 'IBM Plex Mono',monospace;color:var(--muted);line-height:1.7}aside{background:var(--panel);padding:20px;border-radius:5px;min-width:0}.group{border-bottom:1px solid var(--rule);padding-bottom:18px;margin-bottom:18px}.section-title{font:10px 'IBM Plex Mono',monospace;letter-spacing:.12em;margin:0 0 12px;color:var(--muted)}label{display:block;font-size:12px;margin:15px 0 7px}label output{float:right;font:11px 'IBM Plex Mono',monospace;color:var(--accent)}input,select,button,textarea{font:inherit;max-width:100%;color:var(--ink)}select,input[type=text],textarea{width:100%;background:var(--well);border:1px solid var(--rule);border-radius:4px;padding:9px}input[type=range]{width:100%;accent-color:var(--accent);display:block;margin:9px 0}input[type=checkbox]{accent-color:var(--accent);margin:0 8px 0 0}input[type=file]{width:100%;font-size:12px;margin-top:12px}button{min-width:0;overflow-wrap:anywhere;border:1px solid var(--rule);border-radius:4px;padding:9px 11px;background:var(--button);cursor:pointer;font-size:12px}button:hover{border-color:var(--accent)}button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}button:disabled{opacity:.5;cursor:default}.row{display:flex;gap:6px;flex-wrap:wrap;margin-top:9px}.row>*{flex:1}.primary{background:var(--accent);color:white;border-color:var(--accent)}details{font-size:12px;margin-top:13px}summary{cursor:pointer;color:var(--muted)}details p{line-height:1.6;color:var(--muted)}textarea{min-height:100px;font:11px 'IBM Plex Mono',monospace;margin-top:8px}#message{font-size:12px;line-height:1.5;overflow-wrap:anywhere;margin-bottom:0}#message:empty{display:none}#crop{display:block;width:160px;max-width:100%;height:auto;touch-action:none;background:#fff;margin:12px auto}#cameraStatus{font-size:12px;color:var(--muted)}.live-dot{display:inline-block;width:6px;height:6px;background:#c9533a;border-radius:50%;margin-right:6px;animation:pulse 1.5s infinite}@keyframes pulse{50%{opacity:.35}}[hidden]{display:none!important}footer{border-top:1px solid var(--rule);margin-top:42px;padding-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:36px;color:var(--muted);line-height:1.8}footer h2{font:32px 'Instrument Serif',Georgia,serif;color:var(--ink);margin:0}footer pre{white-space:pre-wrap;font:11px/2 'IBM Plex Mono',monospace;padding:18px;background:var(--panel);border-radius:4px}footer a{color:inherit}dialog{background:var(--bg);color:var(--ink);border:1px solid var(--rule);border-radius:8px;width:min(620px,90vw)}dialog::backdrop{background:#0008}@media(max-width:760px){body{padding:24px 18px}header{display:block}.edition{display:none}main{grid-template-columns:1fr;gap:20px}.stage{position:static}#view{max-height:none}footer{grid-template-columns:1fr;gap:12px}#stats{gap:12px 18px}aside{padding:20px}}@media(prefers-color-scheme:dark){:root{--bg:#1e231e;--panel:#2a3228;--ink:#e3e9dc;--muted:#a3af9a;--rule:#434e3d;--accent:#91ae7e;--button:#343f30;--well:#242c22}.primary{color:#182013}.sheet{box-shadow:none}}@media(prefers-reduced-motion:reduce){.live-dot{animation:none}}
 
-/* PWA-UPDATE-SYSTEM v1 */
+/* PWA-UPDATE-SYSTEM v2 */
 .update-bar{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;justify-content:space-between;background:var(--panel);border:1.5px solid var(--accent);border-radius:5px;padding:12px 14px;font-size:14px;margin:0 auto 20px;max-width:1390px}
 .appfoot{max-width:1390px;margin:8px auto 24px;padding:0 4px calc(8px + env(safe-area-inset-bottom, 0px));display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;font-size:13px;color:var(--muted)}
-</style></head><body><header><div><div class="eyebrow">A STUDY IN CONTINUOUS DRAWING</div><h1>Elastic Loop</h1><p>One line. No beginning, no end. Watch an image find its shape.</p></div><div class="edition">NO. 001 &nbsp; / &nbsp; GENERATIVE TOOLS</div></header><!-- PWA-UPDATE-SYSTEM v1 -->
+</style></head><body><header><div><div class="eyebrow">A STUDY IN CONTINUOUS DRAWING</div><h1>Elastic Loop</h1><p>One line. No beginning, no end. Watch an image find its shape.</p></div><div class="edition">NO. 001 &nbsp; / &nbsp; GENERATIVE TOOLS</div></header><!-- PWA-UPDATE-SYSTEM v2 -->
 <div class="update-bar" id="updateBar" role="status" aria-live="polite" hidden>
   <span id="updateText">A new version of Elastic Loop is ready. Your settings and saved work are kept.</span>
   <span class="row" style="margin-top:0"><button class="primary" id="updateNow">Update now</button><button id="updateLater">Later</button></span>
@@ -34,7 +34,7 @@ repeat:
   relax crowded, light areas
   preserve a single closed loop
 
-settle → export one SVG path</pre><p class="caption">Camera requires HTTPS or localhost and browser permission. Fonts use system fallbacks offline. A spacing of about 3 helps slower devices.</p></div></footer><!-- PWA-UPDATE-SYSTEM v1 -->
+settle → export one SVG path</pre><p class="caption">Camera requires HTTPS or localhost and browser permission. Fonts use system fallbacks offline. A spacing of about 3 helps slower devices.</p></div></footer><!-- PWA-UPDATE-SYSTEM v2 -->
 <footer class="appfoot">
   <span>Elastic Loop <b>v<span id="appVersion"></span></b></span>
   <span id="updateStatus"></span>
@@ -144,57 +144,281 @@ syncUI();reset();try{profiles=decodeProfiles(localStorage.getItem(STORAGE)||'{}'
 // Exposed only when requested for local invariant testing; no network or backend API.
 if(new URLSearchParams(location.search).has('test'))window.loopTest={get state(){return state},get points(){return points},get steps(){return steps},get size(){return [W,H]},get gridG(){return gridG},setState(p){state={...state,...p};syncUI();reset()},setSteps(n){steps=n},sample(t=0){sourceReady=true;updateField(t)},step(n=1){for(let i=0;i<n;i++){const wob=clamp(1-(steps/(state.style==='squares'?2.5:1)-2600)/500,0,1);if(state.style==='squares')squareSweep(wob);else{const old=points;points=curveStep(wob);untangle(points);if(countIntersections(points,false,1).count||countIntersections(flattenSpline(points),false,1).count)points=old}steps++}},draw,readout,curveStep,untangle,validateSquares,countIntersections,flattenSpline,svgString,normalizeProfile,decodeProfiles,get paused(){return paused},pause(){paused=true}};
 </script><script>
-// PWA-UPDATE-SYSTEM v1: auto-update, version banner, Check for updates. Do not remove this line.
-const APP_VERSION='1.0.0';
+// PWA-UPDATE-SYSTEM v2: auto-update, version banner, Check for updates. Do not remove this line.
+const APP_RELEASE='1.0.1-20261126-1';
+const APP_VERSION='1.0.1';
 (function(){
-  document.getElementById('appVersion').textContent=APP_VERSION;
-  const status=document.getElementById('updateStatus'),checkBtn=document.getElementById('checkUpdates'),bar=document.getElementById('updateBar');
-  const say=t=>{status.textContent=t;};
-  if(!('serviceWorker' in navigator)||!/^https?:$/.test(location.protocol))return;
-  checkBtn.hidden=false;
-  const newer=(a,b)=>{const x=String(a).split('.').map(Number),y=String(b).split('.').map(Number);for(let i=0;i<Math.max(x.length,y.length);i++){if((x[i]||0)!==(y[i]||0))return (x[i]||0)>(y[i]||0);}return false;};
-  let reg=null,userAsked=false,reloading=false,remote=null;
-  function showBar(ver){
-    let later=null;try{later=sessionStorage.getItem('elasticloop-update-later');}catch(e){}
-    document.getElementById('updateText').textContent=`Elastic Loop ${ver?'v'+ver+' ':''}is ready. Updating keeps your settings and saved work.`;
-    if(later&&!userAsked)return;
-    bar.hidden=false;say('An update is ready.');
+  var PENDING_KEY = 'elastic-loop-pending-state-v1';
+  var LATER_KEY = 'elasticloop-update-later-v2';
+  var BC_NAME = 'elasticloop-update-v2';
+
+  // Restore work saved just before an update (see applyUpdate).
+  // Runs before anything else: the main script has already run, so
+  // state / normalizeProfile / syncUI / reset are available.
+  try {
+    var pendingRaw = null;
+    try { pendingRaw = localStorage.getItem(PENDING_KEY); } catch (e) {}
+    if (pendingRaw) {
+      var saved = JSON.parse(pendingRaw);
+      var restored = normalizeProfile(saved.state);
+      if (restored.source === 'file' || restored.source === 'camera') restored.source = 'portrait';
+      state = restored;
+      if (saved.name) document.getElementById('name').value = saved.name;
+      syncUI();
+      reset();
+      try { localStorage.removeItem(PENDING_KEY); } catch (e) {}
+    }
+  } catch (e) { try { localStorage.removeItem(PENDING_KEY); } catch (e2) {} }
+
+  document.getElementById('appVersion').textContent = APP_VERSION;
+  var status = document.getElementById('updateStatus'), checkBtn = document.getElementById('checkUpdates'), bar = document.getElementById('updateBar');
+  var say = function(t){ status.textContent = t; };
+  if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
+  checkBtn.hidden = false;
+
+  var reg = null, userAsked = false, reloading = false, verifying = false, updating = false;
+  var remote = null, pendingRelease = null, checkPromise = null;
+  var tabId = 'tab-' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+
+  // Unsaved work: the live settings differ from the selected saved
+  // profile, or from the defaults when no profile is selected.
+  function isDirty(){
+    try {
+      var current = normalizeProfile(state);
+      var sel = document.getElementById('profiles').value;
+      var base = (sel && typeof profiles !== 'undefined' && profiles[sel])
+        ? normalizeProfile(profiles[sel]) : JSON.parse(JSON.stringify(DEFAULTS));
+      return JSON.stringify(current) !== JSON.stringify(base);
+    } catch (e) { return true; }
   }
-  function waitingReady(w){if(w&&navigator.serviceWorker.controller)showBar(remote&&remote.version);}
-  function track(w){if(!w)return;w.addEventListener('statechange',()=>{if(w.state==='installed')waitingReady(w);});}
-  async function fetchRemote(){try{const r=await fetch('version.json?t='+Date.now(),{cache:'no-store'});if(r.ok)remote=await r.json();}catch(e){}return remote;}
-  async function check(manual){
-    if(manual){userAsked=true;say('Checking\u2026');checkBtn.disabled=true;}
-    try{
-      const info=await fetchRemote();
-      if(reg){await reg.update().catch(()=>{});}
-      if(reg&&reg.waiting&&navigator.serviceWorker.controller){showBar(info&&info.version);if(manual)say('An update is ready.');}
-      else if(info&&newer(info.version,APP_VERSION)){if(manual)say(`Version ${info.version} found. Downloading\u2026`);}
-      else if(manual)say(info?`You have the latest version (${APP_VERSION}).`:'Could not reach the server. Try again when you are online.');
-    }finally{if(manual)checkBtn.disabled=false;}
+
+  // Multi-tab coordination over BroadcastChannel.
+  var bc = null, bcWaiters = {};
+  try { if ('BroadcastChannel' in window) bc = new BroadcastChannel(BC_NAME); } catch (e) {}
+  if (bc) bc.onmessage = function(ev){
+    var d = ev.data || {};
+    if (d.type === 'update-query' && d.from !== tabId) {
+      try { bc.postMessage({ type: 'update-response', id: d.id, from: tabId, blocked: isDirty() }); } catch (e) {}
+    } else if (d.type === 'update-response' && bcWaiters[d.id]) {
+      bcWaiters[d.id].push(d);
+    }
+  };
+  function queryTabs(release){
+    return new Promise(function(resolve){
+      if (!bc) return resolve([]);
+      var id = 'q-' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+      var answers = [];
+      bcWaiters[id] = answers;
+      try { bc.postMessage({ type: 'update-query', id: id, from: tabId, release: release }); } catch (e) {}
+      setTimeout(function(){ delete bcWaiters[id]; resolve(answers); }, 800);
+    });
   }
-  function applyUpdate(){
-    try{if(typeof persist==='function')persist();}catch(e){}
-    bar.hidden=true;say('Updating\u2026');
-    const w=reg&&reg.waiting;
-    if(w){userAsked=true;w.postMessage({type:'SKIP_WAITING'});
-      setTimeout(()=>{if(!reloading){reloading=true;location.reload();}},4000);
-    }else{reloading=true;location.reload();}
+
+  function workerVersion(worker, ms){
+    return new Promise(function(resolve){
+      if (!worker || !('MessageChannel' in window)) return resolve(null);
+      var done = false, timer = null;
+      try {
+        var ch = new MessageChannel();
+        timer = setTimeout(function(){ if (!done) { done = true; resolve(null); } }, ms);
+        ch.port1.onmessage = function(ev){
+          if (done) return; done = true; clearTimeout(timer);
+          var d = ev.data || {};
+          resolve((d.release && d.displayVersion) ? d : null);
+        };
+        worker.postMessage({ type: 'GET_VERSION' }, [ch.port2]);
+      } catch (e) { if (timer) clearTimeout(timer); resolve(null); }
+    });
   }
-  document.getElementById('updateNow').onclick=applyUpdate;
-  document.getElementById('updateLater').onclick=()=>{bar.hidden=true;try{sessionStorage.setItem('elasticloop-update-later',(remote&&remote.version)||'?');}catch(e){}say('Update postponed. You will be asked again next time you open the app, or tap Check for updates.');};
-  checkBtn.onclick=()=>check(true);
-  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(reloading||!userAsked)return;reloading=true;location.reload();});
-  window.addEventListener('load',async()=>{
-    try{reg=await navigator.serviceWorker.register('sw.js',{updateViaCache:'none'});}catch(e){return;}
-    if(reg.waiting)waitingReady(reg.waiting);
+  function workerClientCount(worker){
+    return new Promise(function(resolve){
+      if (!worker || !('MessageChannel' in window)) return resolve(null);
+      var done = false, timer = null;
+      try {
+        var ch = new MessageChannel();
+        timer = setTimeout(function(){ if (!done) { done = true; resolve(null); } }, 2000);
+        ch.port1.onmessage = function(ev){
+          if (done) return; done = true; clearTimeout(timer);
+          var d = ev.data || {};
+          resolve(typeof d.count === 'number' ? d.count : null);
+        };
+        worker.postMessage({ type: 'GET_CLIENTS' }, [ch.port2]);
+      } catch (e) { if (timer) clearTimeout(timer); resolve(null); }
+    });
+  }
+  function waitControllerChange(ms){
+    return new Promise(function(resolve){
+      var done = false;
+      var timer = setTimeout(function(){ if (!done) { done = true; resolve(false); } }, ms);
+      var onChange = function(){
+        if (done) return; done = true; clearTimeout(timer);
+        navigator.serviceWorker.removeEventListener('controllerchange', onChange);
+        resolve(true);
+      };
+      navigator.serviceWorker.addEventListener('controllerchange', onChange);
+    });
+  }
+
+  function showBar(display, release, manual){
+    if (release) pendingRelease = release;
+    var later = null;
+    try { later = sessionStorage.getItem(LATER_KEY); } catch (e) {}
+    document.getElementById('updateText').textContent = 'Elastic Loop ' + (display ? 'v' + display + ' ' : '') + 'is ready. Updating keeps your settings and saved work.';
+    if (later && release && later === release && !manual) return;
+    bar.hidden = false;
+    say('An update is ready.');
+  }
+  function fetchRemote(){
+    return fetch('version.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function(r){ if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+      .then(function(info){ remote = (info && typeof info.release === 'string') ? info : null; return remote; })
+      .catch(function(){ remote = null; return null; });
+  }
+  function maybeShowUpdate(manual){
+    return fetchRemote().then(function(info){
+      if (reg) return reg.update().catch(function(){}).then(function(){ return info; });
+      return info;
+    }).then(function(info){
+      var w = reg && reg.waiting;
+      if (!w || !navigator.serviceWorker.controller) {
+        if (manual) {
+          if (!info) say('Could not reach the server. Try again when you are online.');
+          else if (info.release && info.release !== APP_RELEASE) say('Version ' + info.version + ' found. Downloading\u2026');
+          else say('You have the latest version (' + APP_VERSION + ').');
+        }
+        return false;
+      }
+      return workerVersion(w, 2000).then(function(verified){
+        if (verified) {
+          if (info && info.release && verified.release !== info.release) {
+            if (manual) say('The downloaded update did not match the published release. Try again.');
+            return false;
+          }
+          showBar(verified.displayVersion, verified.release, manual);
+          if (manual) say('An update is ready.');
+          return true;
+        }
+        // Handshake failed: show the banner, but name no version.
+        showBar(null, info && info.release, manual);
+        if (manual) say('An update is ready.');
+        return true;
+      });
+    });
+  }
+  function check(manual){
+    if (checkPromise) return checkPromise;
+    if (manual) { say('Checking\u2026'); checkBtn.disabled = true; }
+    checkPromise = maybeShowUpdate(manual).catch(function(){ return false; }).then(function(ok){
+      checkPromise = null;
+      if (manual) checkBtn.disabled = false;
+      return ok;
+    });
+    return checkPromise;
+  }
+  function track(w){
+    if (!w) return;
+    w.addEventListener('statechange', function(){
+      if (w.state === 'installed') check(false);
+    });
+  }
+
+  async function applyUpdate(){
+    if (updating) return;
+    updating = true;
+    try {
+      var w = reg && reg.waiting;
+      if (!w) { say('No update is waiting. Tap Check for updates first.'); return; }
+      var expected = pendingRelease || (remote && remote.release);
+      // 1. Protect this tab's unsaved work before anything moves.
+      if (isDirty()) {
+        try {
+          var norm = normalizeProfile(state);
+          if (norm.source === 'file' || norm.source === 'camera') norm.source = 'portrait';
+          var nm = (document.getElementById('name').value || '').trim() || document.getElementById('profiles').value || '';
+          localStorage.setItem(PENDING_KEY, JSON.stringify({ name: nm, state: norm }));
+        } catch (e) {
+          say('Could not save your current settings \u2014 save the profile first, then try again.');
+          return;
+        }
+      }
+      // Persist, but never with a stale in-memory copy: another tab
+      // may have saved a profile since this tab loaded. Re-read
+      // storage and merge this tab's profiles on top, so a profile
+      // saved elsewhere is never wiped by this tab's update.
+      try {
+        if (typeof persist === 'function') {
+          var storedProfiles = {};
+          try { storedProfiles = decodeProfiles(localStorage.getItem(STORAGE) || '{}'); } catch (e2) {}
+          profiles = Object.assign(Object.create(null), storedProfiles, profiles);
+          persist();
+        }
+      } catch (e) {}
+      // 2. Coordinate with other tabs of this app.
+      say('Checking other tabs\u2026');
+      var answers = await queryTabs(expected);
+      if (answers.some(function(a){ return a.blocked; })) {
+        say('Another ElasticLoop tab has unsaved work \u2014 save it there first, or close that tab.');
+        return;
+      }
+      if (answers.length === 0) {
+        var count = await workerClientCount(w);
+        if (count === null || count > 1) {
+          say('Another ElasticLoop tab is open and couldn\u2019t confirm it\u2019s safe.');
+          return;
+        }
+      }
+      // 3. Activate only the specific waiting worker.
+      say('Updating\u2026');
+      userAsked = true;
+      verifying = true;
+      var changed = waitControllerChange(8000);
+      w.postMessage({ type: 'SKIP_WAITING' });
+      var ok = await changed;
+      verifying = false;
+      if (!ok) {
+        userAsked = false;
+        say('The update did not start. Tap Update now to try again, or Later to defer it.');
+        return;
+      }
+      // 4. Verify the new controller really is the expected release,
+      // then reload exactly once. No blind reload fallback exists.
+      var info = await workerVersion(navigator.serviceWorker.controller, 2000);
+      if (!info || (expected && info.release !== expected)) {
+        userAsked = false;
+        say('The update did not take over as expected. Tap Update now to try again, or Later to defer it.');
+        return;
+      }
+      if (reloading) return;
+      reloading = true;
+      location.reload();
+    } finally { updating = false; }
+  }
+
+  document.getElementById('updateNow').onclick = applyUpdate;
+  document.getElementById('updateLater').onclick = function(){
+    bar.hidden = true;
+    try { sessionStorage.setItem(LATER_KEY, pendingRelease || (remote && remote.release) || '?'); } catch (e) {}
+    say('Update postponed. You will be asked again next time you open the app, or tap Check for updates.');
+  };
+  checkBtn.onclick = function(){ check(true); };
+  // A controllerchange on its own (first install, or an update
+  // activated from another tab) never reloads this page: only an
+  // explicit Update now in this tab does, after verification in
+  // applyUpdate. There is deliberately no reload here.
+  window.addEventListener('load', async function(){
+    try { reg = await navigator.serviceWorker.register('sw.js', { updateViaCache: 'none', scope: './' }); } catch (e) { return; }
+    if (reg.waiting) check(false);
     track(reg.installing);
-    reg.addEventListener('updatefound',()=>track(reg.installing));
+    reg.addEventListener('updatefound', function(){ track(reg.installing); });
     check(false);
   });
-  let last=Date.now();
-  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&Date.now()-last>5*60e3){last=Date.now();check(false);}});
-  setInterval(()=>{if(document.visibilityState==='visible'){last=Date.now();check(false);}},60*60e3);
+  var last = Date.now();
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'visible' && Date.now() - last > 5 * 60e3) { last = Date.now(); check(false); }
+  });
+  setInterval(function(){
+    if (document.visibilityState === 'visible') { last = Date.now(); check(false); }
+  }, 60 * 60e3);
 })();
 </script>
 </body></html>

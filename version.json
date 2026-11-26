@@ -1,1 +1,1 @@
-{ "version": "1.0.0", "date": "2026-11-26", "notes": "Add PWA auto-update system (PWA-UPDATE-SYSTEM v1)." }
+{"release": "1.0.1-20261126-1", "version": "1.0.1", "date": "2026-11-26", "notes": "Migrate to PWA-UPDATE-SYSTEM v2."}
